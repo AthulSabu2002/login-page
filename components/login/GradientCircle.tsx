@@ -4,19 +4,19 @@ import { RiMicAiFill } from "react-icons/ri";
 const GradientCircle = () => {
   return (
     <div 
-      className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[460px] h-[460px] rounded-full"
-      style={{
-          background: 'linear-gradient(to bottom, #084278, #0F7BDF00)',
-          zIndex: 3,
-          position: 'relative'
-      }}
+        className="absolute top-[45%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[440px] h-[440px] rounded-full"
+        style={{
+            background: 'linear-gradient(to bottom, #084278, #0F7BDF00)',
+            zIndex: 3,
+            position: 'relative'
+        }}
     >
       {/* Inner layer circle */}
       <div 
           className="absolute rounded-full"
           style={{
-              width: '340px',
-              height: '340px',
+              width: '320px',
+              height: '320px',
               top: '60px',
               left: '60px',
               background: 'linear-gradient(180deg, #0A4A8C, #0F7BDFB2)',

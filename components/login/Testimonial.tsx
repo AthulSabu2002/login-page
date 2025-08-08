@@ -15,11 +15,11 @@ const Testimonial = () => {
     
     return (
         <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-[80%] max-w-md text-center mb-4">
-            <div className="testimonial-containe p-6 rounded-xl text-white mb-4">
+            <div className="testimonial-containe p-2 rounded-xl text-white mb-0">
                 <div className="text-center mb-2">
                     <BiSolidQuoteAltLeft className="text-white w-8 h-8 mx-auto" />
                 </div>
-                <p className={`font-medium mb-4 ${inter.className}`}>&quot;{testimonials[activeTestimonial].quote}&quot;</p>
+                <p className={`font-medium text-base mb-4 ${inter.className}`}>&quot;{testimonials[activeTestimonial].quote}&quot;</p>
                 <div className="flex items-center justify-center gap-1">
                     <span className="text-sm text-blue-200">-</span>
                     <span className={`${dmSerifDisplay.className}`}>{testimonials[activeTestimonial].author}</span>
@@ -28,7 +28,7 @@ const Testimonial = () => {
             </div>
             
             {/* Navigation dots */}
-            <div className="flex justify-center space-x-1.5 mt-4">
+            <div className="flex justify-center space-x-1.5 mt-1">
                 {testimonials.map((_, index) => (
                     <button 
                         key={index}

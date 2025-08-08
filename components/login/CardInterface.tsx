@@ -2,7 +2,7 @@ import { RiMicAiFill } from "react-icons/ri";
 
 const CardInterface = () => {
   return (
-    <div className="absolute top-[50%] left-[70%] transform -translate-x-1/2 -translate-y-1/2 w-[200px] h-[260px] bg-white rounded-lg shadow-xl z-4 overflow-hidden">
+    <div className="absolute top-[45%] left-[70%] transform -translate-x-1/2 -translate-y-1/2 w-[200px] h-[260px] bg-white rounded-lg shadow-xl z-4 overflow-hidden">
       {/* Card Header */}
       <div className="h-6 bg-gray-100 flex items-center px-2 border-b border-gray-200">
           <div className="flex space-x-1">
