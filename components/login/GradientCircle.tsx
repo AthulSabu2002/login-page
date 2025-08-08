@@ -24,9 +24,20 @@ const GradientCircle = () => {
               border: '0.9px solid rgba(144, 195, 243, 0.5)'
           }}
       >
-          {/* Microphone Icon - at start of left side of inner disc */}
-          <div className="absolute top-[50%] left-[-8%] transform -translate-y-1/2 bg-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg">
-              <MdRecordVoiceOver className="h-7 w-7 text-blue-600" />
+          {/* Microphone Icon with outer gradient circle */}
+          <div className="absolute top-[50%] left-[-8%] transform -translate-y-1/2">
+              {/* Outer gradient circle */}
+              <div 
+                  className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-20 h-20 rounded-full"
+                  style={{
+                      background: 'radial-gradient(circle, rgba(8, 66, 120, 0.6) 0%, rgba(15, 123, 223, 0.3) 50%, rgba(15, 123, 223, 0) 100%)',
+                      zIndex: -1
+                  }}
+              />
+              {/* Inner white circle with icon */}
+              <div className="bg-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg relative z-10">
+                  <MdRecordVoiceOver className="h-7 w-7 text-blue-600" />
+              </div>
           </div>
 
           {/* Sound Wave Visualization - before center of inner disc */}
@@ -43,13 +54,24 @@ const GradientCircle = () => {
               ))}
           </div>
 
-          {/* Speech Icon - before center of inner disc */}
-          <div className="absolute top-[50%] left-[29%] transform -translate-y-1/2 bg-white w-11 h-11 rounded-full flex items-center justify-center shadow-lg">
-              <RiMicAiFill className="h-5 w-5 text-blue-600" />
+          {/* Speech Icon with outer gradient circle */}
+          <div className="absolute top-[50%] left-[29%] transform -translate-y-1/2">
+              {/* Outer gradient circle */}
+              <div 
+                  className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-16 h-16 rounded-full"
+                  style={{
+                      background: 'radial-gradient(circle, rgba(8, 66, 120, 0.6) 0%, rgba(15, 123, 223, 0.3) 50%, rgba(15, 123, 223, 0) 100%)',
+                      zIndex: -1
+                  }}
+              />
+              {/* Inner white circle with icon */}
+              <div className="bg-white w-11 h-11 rounded-full flex items-center justify-center shadow-lg relative z-10">
+                  <RiMicAiFill className="h-5 w-5 text-blue-600" />
+              </div>
           </div>
           
           {/* Rectangular connecting line from message icon to card */}
-          <div className="absolute top-[50%] left-[43%] w-[80px] h-[10px] transform -translate-y-1/2"
+          <div className="absolute top-[50%] left-[43%] w-[90px] h-[20px] transform -translate-y-1/2"
               style={{
                   background: 'linear-gradient(to left, rgba(144, 195, 243, 0.8), rgba(15, 123, 223, 0.3))',
                   boxShadow: '0 0 5px rgba(144, 195, 243, 0.3)'
