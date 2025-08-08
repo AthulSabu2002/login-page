@@ -1,8 +1,10 @@
 import React from 'react';
+import { Inter } from 'next/font/google';
+const inter = Inter({ subsets: ['latin'] });
 
 const LoginForm = () => {
   return (
-    <div className="max-w-sm mx-0 bg-white rounded-2xl shadow-lg p-6 min-h-lh">
+    <div className={`max-w-sm mx-0 bg-white rounded-2xl shadow-lg p-6 min-h-lh ${inter.className}`}>
         {/* Login form */}
         <div className="flex flex-col space-y-4">
             <div className="flex items-center mb-2">
@@ -26,7 +28,7 @@ const LoginForm = () => {
                     <div className="block text-sm font-medium mb-2">Email</div>
                     <input 
                         type="email" 
-                        className="w-full px-4 py-3 rounded-lg border border-gray-300 placeholder:font-normal placeholder:text-gray-400 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" 
+                        className={`w-full px-4 py-3 rounded-lg border border-gray-300 placeholder:font-normal placeholder:text-gray-400 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent ${inter.className}`} 
                         placeholder="Enter your email" 
                     />
                 </div>
@@ -35,7 +37,7 @@ const LoginForm = () => {
                     <div className="block text-sm font-medium mb-2">Password</div>
                     <input 
                         type="password" 
-                        className="w-full px-4 py-3 rounded-lg border border-gray-300 placeholder:font-normal placeholder:text-gray-400 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" 
+                        className={`w-full px-4 py-3 rounded-lg border border-gray-300 placeholder:font-normal placeholder:text-gray-400 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent ${inter.className}`} 
                         placeholder="Enter your password" 
                     />
                 </div>
@@ -47,7 +49,7 @@ const LoginForm = () => {
                 </div>
 
                 <button 
-                    className="w-full bg-[#0A3161] text-white py-3 rounded-lg hover:bg-[#0A3161]/90 text-sm font-medium transition-colors duration-200"
+                    className={`w-full bg-[#0A3161] text-white py-3 rounded-lg hover:bg-[#0A3161]/90 text-sm font-medium transition-colors duration-200 ${inter.className}`}
                 >
                     Sign In
                 </button>
