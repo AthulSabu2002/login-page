@@ -19,7 +19,9 @@ const Testimonial = () => {
                 <div className="text-center mb-2">
                     <BiSolidQuoteAltLeft className="text-white w-8 h-8 mx-auto" />
                 </div>
-                <p className={`font-medium text-base mb-4 ${inter.className}`}>&quot;{testimonials[activeTestimonial].quote}&quot;</p>
+                <p className={`font-medium text-base mb-2 ${inter.className} [text-wrap:balance]`}>
+                    &quot;{testimonials[activeTestimonial].quote}&quot;
+                </p>
                 <div className="flex items-center justify-center gap-1">
                     <span className="text-sm text-blue-200">-</span>
                     <span className={`${dmSerifDisplay.className}`}>{testimonials[activeTestimonial].author}</span>
